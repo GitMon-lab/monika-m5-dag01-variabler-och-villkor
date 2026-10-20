@@ -12,9 +12,7 @@ I modul 4 byggde du sidans struktur och utseende. JavaScript gör sidan **levand
 
 ## Så arbetar du (varje dag)
 
-Du använder Git och GitHub varje dag, precis som i modul 4. Den här modulen fördjupar det: på dag 9 lär du dig grenar och att lösa konflikter, och du arbetar i `mitt-projekt` hela modulen.
-
-Du använder också AI i utbildningen, med tydliga regler. Läs `AI-REGLER-MODUL5.md` i det här repot innan du gör AI-uppgiften.
+Du använder Git och GitHub varje dag, precis som i modul 4. Den här modulen fördjupar det: på dag 9 lär du dig grenar och att lösa konflikter,.
 
 ### Engångsinställning (bara om du inte gjorde den i modul 4)
 
@@ -75,7 +73,7 @@ Under STEG 6: kaféet har öppet vardagar 7–18 och helger 9–16. Med `veckoda
 
 ### Steg 8. Förutsäg, kör, jämför
 
-Öppna `forutsagelser.md`. Skriv din gissning på vad varje rad ger **innan** du kör den. Kör sedan raderna i Console (eller i STEG 7) och fyll i vad som hände. Skriv en regel med egna ord för varje rad du gissade fel på. Det här är början på dagens AI-spår.
+Öppna `forutsagelser.md`. Skriv din gissning på vad varje rad ger **innan** du kör den. Kör sedan raderna i Console (eller i STEG 7) och fyll i vad som hände. Skriv en regel med egna ord för varje rad du gissade fel på.
 
 ## Så kan utskriften se ut när du är klar
 
@@ -92,38 +90,6 @@ Att betala: 91.80 kr
 53 2 2 0.30000000000000004 false true
 ```
 
-## AI-spåret (nivå 1: Förutsäg och förklara)
-
-**Förutsäg, kör, jämför** (cirka 20 minuter, efter att du gjort din egen lösning)
-
-Du förutsäger vad koden gör innan den körs. AI förklarar och granskar, men skriver inte din lösning. Att läsa kod och veta vad den gör är grunden. Den som inte kan förutsäga kod kan inte heller granska AI:s kod.
-
-Regler: egen lösning först, du ska kunna förklara varje rad, och du loggar i `docs/ai-logg.md` i `mitt-projekt` under rubriken *Modul 5*. Reglerna står i `AI-REGLER-MODUL5.md`.
-
-1. Skriv ner dina gissningar på fem uttryck i docs/ai-logg.md, till exempel "5" + 3 och "5" - 3, innan du kör något.
-2. Kör dem i Console (F12) och markera vilka du hade rätt på.
-3. Be AI förklara bara de du hade fel på, med prompten nedan.
-4. Kör AI:s egna exempel i Console. Stämmer förklaringen?
-5. Skriv en regel med egna ord för varje fall du missade.
-
-Prompt att utgå från:
-
-```
-Jag är nybörjare på JavaScript.
-Jag trodde att [uttryck] skulle ge [min gissning],
-men Console visar [det som hände].
-Förklara varför, kort. Ge ett eget exempel
-jag kan köra i Console för att kontrollera.
-```
-
-**Kontrollera med:**
-
-- Kör AI:s exempel i Console och se själv.
-- Slå upp i MDN om något låter konstigt.
-- Kan du förklara regeln utan att titta?
-
-**I ditt projekt:** Lista fem saker på din sida som borde vara dynamiska. Lägg listan i docs/js-plan.md.
-
 ## Kontrollista: så vet du att du är klar
 
 - [ ] `script.js` skriver ut kvittot i Console utan röda felmeddelanden.
@@ -132,7 +98,6 @@ jag kan köra i Console för att kontrollera.
 - [ ] Villkoren för rabatt och öppettider fungerar för alla fyra testfallen.
 - [ ] Du har fyllt i `forutsagelser.md` med gissning *före* resultat.
 - [ ] Du har gjort minst fyra commits, med meddelanden som beskriver vad du gjorde.
-- [ ] Du har gjort AI-uppgiften och skrivit en post i `docs/ai-logg.md` i `mitt-projekt`.
 
 ## Tips om du fastnar
 
@@ -142,19 +107,6 @@ jag kan köra i Console för att kontrollera.
 - Inget händer? Spara filen och ladda om sidan (Ctrl+Shift+R). Kontrollera att `<script src="script.js" defer>` finns i `index.html`.
 - JavaScript är känsligt för stora och små bokstäver: `prisBulle` och `prisbulle` är olika saker.
 
-## Ditt projekt: Förbered JavaScript i ditt projekt
-
-Efter övningen jobbar du vidare i `mitt-projekt`, samma repo som i modul 4. Övningen här är träningsbanan, projektet är det som växer. Dagens steg står också i `PROJEKTSTEG-MODUL5.md` (som du kopierar till ditt projekt dag 1), under **Dag 1**.
-
-1. Kopiera `PROJEKTSTEG-MODUL5.md` från övningsrepot till roten i `mitt-projekt`, och `AI-REGLER-MODUL5.md` till `docs/`.
-2. Skapa mappen `js/` och filen `js/main.js`. Lägg `<script src="js/main.js" defer></script>` i `<head>` i `index.html`.
-3. Skriv `console.log("Projektet laddat")` i `main.js` och kontrollera i Console.
-4. Skapa `docs/js-plan.md` och lista fem saker på din sida som borde vara dynamiska.
-5. Lägg tre variabler i `main.js` som hör till ditt case (namn, pris, antal eller liknande).
-6. Commit och push.
-
-**Klart när:** Console visar "Projektet laddat" och `docs/js-plan.md` har fem punkter.
-
 ## Inlämning
 
 **Deadline: imorgon klockan 09.00.** Allt lämnas in i Microsoft Forms. Du behöver inte redovisa något muntligt.
@@ -162,8 +114,7 @@ Efter övningen jobbar du vidare i `mitt-projekt`, samma repo som i modul 4. Öv
 I formuläret fyller du i:
 
 1. Länk till din fork av det här repot.
-2. Länk till ditt `mitt-projekt`.
-3. Reflektion: Vilken skillnad mellan `const` och `let` kan du förklara nu, och vilken av gissningarna i `forutsagelser.md` överraskade dig mest?
+2. Reflektion: Vilken skillnad mellan `const` och `let` kan du förklara nu, och vilken av gissningarna i `forutsagelser.md` överraskade dig mest?
 
 ## Vill du mer? (frivilligt)
 

@@ -2,7 +2,7 @@
 
 Det här ger mig en bild av var ni står. Det påverkar inte vad vi går igenom: vi går igenom grunderna riktigt, oavsett hur det går.
 
-Gör uppgifterna i filen `kalibrering.js` (skapa den själv), utan att googla och utan AI. Kör med Live Server och titta i Console. Skriv "vet inte" som kommentar om du fastnar. Det är helt okej.
+Gör uppgifterna i filen `kalibrering.js` (skapa den själv), utan att googla. Kör med Live Server och titta i Console. Skriv "vet inte" som kommentar om du fastnar. Det är helt okej.
 
 1. Skapa en variabel med ditt förnamn och skriv ut den.
 2. Skapa två variabler med varsitt tal och skriv ut summan.
