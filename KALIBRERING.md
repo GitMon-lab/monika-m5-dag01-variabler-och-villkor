@@ -2,7 +2,9 @@
 
 Det här ger mig en bild av var ni står. Det påverkar inte vad vi går igenom: vi går igenom grunderna riktigt, oavsett hur det går.
 
-Gör uppgifterna i filen `kalibrering.js` (skapa den själv), utan att googla. Kör med Live Server och titta i Console. Skriv "vet inte" som kommentar om du fastnar. Det är helt okej.
+Gör uppgifterna i filen `src/kalibrering.ts` (skapa den själv) utan att googla. Lägg raden `import "./kalibrering";` högst upp i `src/main.ts` så att den körs. Starta med `npm run dev` och titta i Console. Skriv "vet inte" som kommentar om du fastnar. Det är helt okej.
+
+Du behöver inte skriva några typer i kalibreringen. Vanlig JavaScript fungerar i en TypeScript-fil.
 
 1. Skapa en variabel med ditt förnamn och skriv ut den.
 2. Skapa två variabler med varsitt tal och skriv ut summan.
