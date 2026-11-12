@@ -59,12 +59,45 @@ console.log(
 let arStudent: boolean = true
 let attBetala: number = (arStudent ? 0.9 : 0) * summa
 
-console.log(` Summa ${summa} Att betala: ${attBetala} kr `)
+console.log(` Hela summa ${summa} Att betala: ${attBetala} kr `)
 
 // STEG 6 ------------------------------------------------------------
 // TODO: skapa veckodag (string, "lördag") och klockslag (number, 15)
 // TODO: avgör om kaféet är öppet (boolean): vardagar 7–18, helger 9–16
 // TODO: skriv ut "Öppet just nu: ja" eller "Öppet just nu: nej"
+
+let lordag: string = 'lördag'
+let klockslag: number = 15
+
+if (klockslag < 7) {
+    console.log('Stängt, öppet just nu stängt ')
+} else if (klockslag < 18) {
+    console.log('Öppet just nu: ja')
+} else {
+    console.log('Stängt, öppet just nu: nej')
+}
+
+//Testar igen
+
+let oppet: boolean = false
+let veckodag: string = 'lördag'
+
+if (veckodag === 'lördag' || veckodag === 'söndag') {
+    // helg öppet 9 -16
+    if (klockslag >= 9 && klockslag <= 16) {
+        oppet = true
+    } else {
+        oppet = false
+    }
+} else {
+    if (klockslag >= 7 && klockslag <= 18) {
+        // vardag öppet 7 -18
+        oppet = true
+    } else {
+        oppet = false
+    }
+}
+console.log(oppet ? 'Öppet just nu: Ja' : 'Öppet just nu: Nej')
 
 // STEG 7 ------------------------------------------------------------
 // TODO: se README. Gissa först, kör sedan.
