@@ -101,3 +101,10 @@ console.log(oppet ? 'Öppet just nu: Ja' : 'Öppet just nu: Nej')
 
 // STEG 7 ------------------------------------------------------------
 // TODO: se README. Gissa först, kör sedan.
+
+console.log('5' + 3)
+//console.log('5' - 3)  //The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+//console.log(true + 1) //Error Operator '+' cannot be applied to types 'boolean' and 'number'.
+console.log(0.1 + 0.2)
+//console.log('' === 0)//This comparison appears to be unintentional because the types 'string' and 'number' have no overlap.
+console.log(null == undefined)
