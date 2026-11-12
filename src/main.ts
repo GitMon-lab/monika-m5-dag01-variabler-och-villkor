@@ -25,8 +25,19 @@ console.log('Namn på cafe: (const kafeNamn: string= ' + kafeNamn + ')')
 // STEG 3 ------------------------------------------------------------
 // TODO: skapa en string, ett number, en boolean, en undefined och en null
 //       Typerna heter string, number, boolean, undefined och null
+
 // TODO: skriv ut typeof för alla fem på en rad (tips: separera med komma)
 // TODO: prova att ge number-variabeln en text. Vad säger TypeScript?
+
+//Error :  Type string is not assignable to type number
+
+let str: string = 'Uppgift'
+let num: number = 3
+let boo: boolean = true
+let und: undefined = undefined
+let nul: null = null
+
+console.log(typeof str, num, boo, und, nul)
 
 // STEG 4 ------------------------------------------------------------
 // TODO: räkna ut summa = antalBullar * prisBulle + antalKaffe * prisKaffe
@@ -35,6 +46,12 @@ console.log('Namn på cafe: (const kafeNamn: string= ' + kafeNamn + ')')
 //       Moms ska ha två decimaler (toFixed(2))
 //       Håll musen över momsDel.toFixed(2). Vilken typ ger toFixed?
 
+let summa: number = antalBullar * prisBulle + antalKaffe * prisKaffe
+let momsDel: number = (summa * 0.12) / 1.12
+
+console.log(
+    'Summa: ' + summa + ' kr Varav moms (12 %): ' + momsDel.toFixed(2) + 'kr'
+)
 // STEG 5 ------------------------------------------------------------
 // TODO: skapa ärStudent (boolean, true). Om ärStudent är true: rabatt 10 %.
 // TODO: räkna ut attBetala (number) och skriv ut "Att betala: ... kr"
