@@ -45,16 +45,21 @@ console.log(typeof str, num, boo, und, nul)
 // TODO: skriv ut "Summa: ... kr" och "Varav moms (12 %): ... kr"
 //       Moms ska ha två decimaler (toFixed(2))
 //       Håll musen över momsDel.toFixed(2). Vilken typ ger toFixed?
-
+//Number
 let summa: number = antalBullar * prisBulle + antalKaffe * prisKaffe
 let momsDel: number = (summa * 0.12) / 1.12
 
 console.log(
     'Summa: ' + summa + ' kr Varav moms (12 %): ' + momsDel.toFixed(2) + 'kr'
 )
+
 // STEG 5 ------------------------------------------------------------
 // TODO: skapa ärStudent (boolean, true). Om ärStudent är true: rabatt 10 %.
 // TODO: räkna ut attBetala (number) och skriv ut "Att betala: ... kr"
+let arStudent: boolean = true
+let attBetala: number = (arStudent ? 0.9 : 0) * summa
+
+console.log(` Summa ${summa} Att betala: ${attBetala} kr `)
 
 // STEG 6 ------------------------------------------------------------
 // TODO: skapa veckodag (string, "lördag") och klockslag (number, 15)
